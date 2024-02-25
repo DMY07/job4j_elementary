@@ -28,7 +28,7 @@ public class MathFunction {
     }
 
     public static void main(String[] args) {
-        System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
+        System.out.println("Результат 1расчета равен: " + sumAndMultiply(10, 20));
         System.out.println("Результат второго расчета равен: " + minusAndDivision(210, 7));
     }
 }
