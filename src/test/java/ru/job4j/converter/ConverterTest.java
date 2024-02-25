@@ -19,6 +19,6 @@ class ConverterTest {
     }
 
     public static void main(String[] args) {
-        System.out.println("Формальное исправление");
+        System.out.println("test");
     }
 }
