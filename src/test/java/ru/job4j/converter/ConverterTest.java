@@ -17,4 +17,6 @@ class ConverterTest {
         float value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
+    public static void main(String[] args) {
+        System.out.println("Формальное исправление");
 }
