@@ -26,13 +26,4 @@ class ConverterTest {
         float value = 0.0001f;
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
-
-    @org.junit.jupiter.api.Test
-    void whenConvert0RblThen3Dollar() {
-        float input = 0;
-        float expected = 3;
-        float output = Converter.rubleToDollar(input);
-        float value = 0.0001f;
-        assertThat(output).isEqualTo(expected, withPrecision(value));
-    }
 }
