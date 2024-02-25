@@ -19,7 +19,7 @@ public class MathCalculator {
 
     public static void main(String[] args) {
         System.out.println("Результат расчета равен: " + sumAndMultiply(10, 20));
-        System.out.println("Результат (сумма двух операций) 2расчета равен: " + sumMinusAnddivision(210, 7));
+        System.out.println("Результат (сумма двух операций) расчета равен: " + sumMinusAnddivision(210, 7));
         System.out.println("Результат (сумма вычисления всех четырех операций) расчета равен: " + sumALL(230, 406));
     }
 }
