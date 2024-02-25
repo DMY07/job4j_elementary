@@ -2,9 +2,8 @@ package ru.job4j.condition;
 
 public class Types {
     public static void main(String[] args) {
-        short s = 1500;
-        char c = (char) s;
-        double d = c;
-        System.out.println("Вывод " + d);
+        long l = 129;
+        byte b = (byte) l;
+        System.out.println("Вывод " + b);
     }
 }
