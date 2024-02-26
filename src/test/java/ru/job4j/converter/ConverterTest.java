@@ -18,6 +18,15 @@ class ConverterTest {
         assertThat(output).isEqualTo(expected, withPrecision(value));
     }
 
+    @org.junit.jupiter.api.Test
+    void whenConvert180RblThen3Dollar() {
+        float input = 180;
+        float expected = 3;
+        float output = Converter.rubleToDollar(input);
+        float value = 0.0001f;
+        assertThat(output).isEqualTo(expected, withPrecision(value));
+    }
+
     public static void main(String[] args) {
         System.out.println("test");
     }
