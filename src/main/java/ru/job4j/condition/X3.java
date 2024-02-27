@@ -1,6 +1,11 @@
 package ru.job4j.condition;
 
 public class X3 {
+
+    /**
+     * Все прописал вот здесь ...
+     */
+
     public static int calc(int a, int b, int c, int x) {
         return a * x * x + b * x + c;
     }
