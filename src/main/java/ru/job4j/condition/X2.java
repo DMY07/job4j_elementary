@@ -34,10 +34,10 @@ public class X2 {
         int b3 = 1;
         int c3 = 1;
         int x3 = 0;
-        int result = X3.calc(a, b, c, x);
-        int result1 = X3.calc1(a1, b1, c1, x1);
-        int result2 = X3.calc2(a2, b2, c2, x2);
-        int result3 = X3.calc3(a3, b3, c3, x3);
+        int result = X2.calc(a, b, c, x);
+        int result1 = X2.calc1(a1, b1, c1, x1);
+        int result2 = X2.calc2(a2, b2, c2, x2);
+        int result3 = X2.calc3(a3, b3, c3, x3);
         System.out.println(result);
         System.out.println(result1);
         System.out.println(result2);
