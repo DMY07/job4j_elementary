@@ -22,7 +22,7 @@ class RectangleAreaTest {
         double expected = 3.472;
         int p = 10;
         double k = 5;
-        double output = RectangleArea.square1(p, k);
+        double output = RectangleArea.square(p, k);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
@@ -31,7 +31,7 @@ class RectangleAreaTest {
         double expected = 187.17;
         int p = 99;
         double k = 11;
-        double output = RectangleArea.square2(p, k);
+        double output = RectangleArea.square(p, k);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 }
