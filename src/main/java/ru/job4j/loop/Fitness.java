@@ -3,10 +3,10 @@ package ru.job4j.loop;
 public class Fitness {
     public static int calc(int ivan, int nik) {
         int month = 0;
-        while ((month * nik) < (month * ivan)) {
+        while (nik <= ivan) {
             ivan *= 3;
             nik *= 2;
-            month += 1;
+            month++;
             }
         return month;
     }
