@@ -5,8 +5,8 @@ public class Slash {
     public static void draw(int size) {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                boolean left = ((cell + row) % 2 == 0); /* добавить условие для левой диагонали - с левого верхнего угла в правый нижний*/
-                boolean right = (((cell + row) * size) % 2 == 0); /* добавить условие для правой диагонали - из левого нижнего в правый верхний*/
+                boolean left = cell == row; /* добавить условие для левой диагонали - с левого верхнего угла в правый нижний*/
+                boolean right = cell + row == size - 1; /* добавить условие для правой диагонали - из левого нижнего в правый верхний*/
                 if (left) {
                     System.out.print("0");
                 } else if (right) {
