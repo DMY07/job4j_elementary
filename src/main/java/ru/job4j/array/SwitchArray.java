@@ -2,11 +2,11 @@ package ru.job4j.array;
 
 public class SwitchArray {
 
-    public static int[] swapBorder(int[] numbers) {
-        int temp = numbers[0];
-        numbers[0] = numbers[numbers.length];
-        numbers[numbers.length] = temp;
-        return numbers;
+    public static int[] swapBorder(int[] array) {
+        int temp = array[0];
+        array[0] = array[array.length - 1];
+        array[array.length - 1] = temp;
+        return array;
     }
 
     public static void main(String[] args) {
