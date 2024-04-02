@@ -17,11 +17,11 @@ class FindLoopTest {
     }
 
     @Test
-    void whenArrayHasNot10Then3() {
-        int[] data = new int[] {5, 10, 3};
-        int element = 7;
+    void whenArrayHasNot10ThenMinus1() {
+        int[] data = new int[] {5, 8, 3};
+        int element = 10;
         int result = FindLoop.indexOf(data, element);
-        int expected = 3;
+        int expected = -1;
         assertThat(result).isEqualTo(expected);
     }
 }
