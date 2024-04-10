@@ -6,7 +6,7 @@ public class ArrayChar {
         for (int i = 0; i < prefix.length; i++) {
             if (prefix[i] != word[i]) {
                 result = false;
-            break;
+                break;
             }
 
         }
