@@ -5,11 +5,9 @@ public class Matrix {
         int[][] table = new int[size][size];
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
-                for (size = 0; size < table.length; size++) {
-                    table[row][cell] = (row + 1) * (cell + 1);
+                table[row][cell] = (row + 1) * (cell + 1);
                 }
             }
-        }
         return table;
     }
 }
