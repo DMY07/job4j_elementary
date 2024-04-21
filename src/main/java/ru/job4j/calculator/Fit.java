@@ -2,12 +2,12 @@ package ru.job4j.calculator;
 
 public class Fit {
 
-    public static double manWeight(short heightMan) {
+    public static double calculatemanWeight(short heightMan) {
         double result = (heightMan - 100) * 1.15;
         return result;
     }
 
-    public static double womanWeight(short heightWoman) {
+    public static double calculatewomanWeight(short heightWoman) {
         double result = (heightWoman - 110) * 1.15;
         return result;
     }
@@ -15,9 +15,9 @@ public class Fit {
     public static void main(String[] args) {
         short heightMan = 187;
         short heightWoman = 170;
-        double man = Fit.manWeight(heightMan);
+        double man = Fit.calculatemanWeight(heightMan);
         System.out.println("Man 187 is " + man);
-        double woman = Fit.womanWeight(heightWoman);
+        double woman = Fit.calculatewomanWeight(heightWoman);
         System.out.println("Woman 170 is " + woman);
     }
 }
