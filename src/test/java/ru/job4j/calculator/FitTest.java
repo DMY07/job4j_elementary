@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class FitTest {
 
     @Test
-    void wheenMan180Then92() {
+    void whenMan180Then92() {
         short input = 180;
         double expected = 92;
         double output = Fit.calculateManWeight(input);
