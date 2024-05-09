@@ -14,7 +14,8 @@ public class SimpleStringEncoder {
                 counter = 1;
             }
         }
-            result += symbol + counter;
+            String first = String.valueOf(symbol);
+            result = first + counter;
             return result;
     }
 }
