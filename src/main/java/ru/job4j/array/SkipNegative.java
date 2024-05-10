@@ -8,7 +8,7 @@ public class SkipNegative {
                     array[row][cell] = 0;
                 }
             }
-            }
+        }
         return array;
     }
 }
