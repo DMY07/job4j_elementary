@@ -9,13 +9,19 @@ public class SimpleStringEncoder {
             if (input.charAt(index) == symbol) {
                 counter++;
             } else {
-                result += symbol + counter;
+                result += symbol;
+                if (counter > 1) {
+                    result += String.valueOf(counter);
+                }
                 symbol = input.charAt(index);
                 counter = 1;
             }
         }
-            String first = String.valueOf(symbol);
-            result = first + counter;
-            return result;
+        result += symbol;
+        if (counter > 1) {
+            result += String.valueOf(counter);
+        }
+        return result;
     }
 }
+
