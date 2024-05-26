@@ -12,7 +12,7 @@ class FitTest {
     void whenMan180Then92() {
         short input = 180;
         double expected = 92;
-        double output = Fit.calculateManWeight(input);
+        double output = Fit.calculateManIdealWeight(input);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
@@ -20,7 +20,7 @@ class FitTest {
     void whenWoman170Then69() {
         short input = 170;
         double expected = 69;
-        double output = Fit.calculateWomanWeight(input);
+        double output = Fit.calculateWomanIdealWeight(input);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
