@@ -11,33 +11,27 @@ class PointTest {
     @Test
     void when00to20then2() {
         double expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double output = Point.distance(x1, y1, x2, y2);
+        Point a = new Point(0, 0);
+        Point b = new Point(2, 0);
+        double output = a.distance(b);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     void when1112to3333then31dot112() {
-            double expected = 31.112;
-            int x3 = 11;
-            int y3 = 22;
-            int x4 = 33;
-            int y4 = 44;
-            double output = Point.distance(x3, y3, x4, y4);
-            assertThat(output).isEqualTo(expected, withPrecision(0.01));
+        double expected = 31.112;
+        Point q = new Point(11, 22);
+        Point w = new Point(33, 44);
+        double output = q.distance1(w);
+        assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     void when01to80then8dot062() {
         double expected = 8.062;
-        int x5 = 0;
-        int y5 = 1;
-        int x6 = 8;
-        int y6 = 0;
-        double output = Point.distance(x5, y5, x6, y6);
+        Point r = new Point(0, 1);
+        Point t = new Point(8, 0);
+        double output = r.distance2(t);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 }
