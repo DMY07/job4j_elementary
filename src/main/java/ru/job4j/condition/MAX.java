@@ -8,8 +8,8 @@ public class MAX {
         return left > right ? left : right;
     }
 
-    public static int max(int right, int one, int left, int two) {
-        return left + right + one + two;
+    public static int max(int left, int right, int one, int two) {
+        return max(max(left, right), max(one, two));
     }
 
     public static int max(int left, int right, int center) {
@@ -18,6 +18,5 @@ public class MAX {
                 max(right, center)
         );
     }
-
 }
 

@@ -37,12 +37,12 @@ class MAXTest {
 
     @Test
     void whenMax16To4parts() {
-        int left = 4;
-        int right = 4;
-        int one = 4;
+        int left = 1;
+        int right = 2;
+        int one = 2;
         int two = 4;
         int result = max(left, right, one, two);
-        int expected = 16;
+        int expected = 4;
         assertThat(result).isEqualTo(expected);
     }
 
@@ -50,9 +50,9 @@ class MAXTest {
     void whenMax9To3part() {
         int left = 3;
         int right = 3;
-        int center = 3;
+        int center = 7;
         int result = max(left, right, center);
-        int expected = 9;
+        int expected = 7;
         assertThat(result).isEqualTo(expected);
     }
 }
