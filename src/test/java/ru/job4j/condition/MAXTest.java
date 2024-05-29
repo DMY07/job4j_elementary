@@ -34,4 +34,25 @@ class MAXTest {
         int expected = 22;
         assertThat(result).isEqualTo(expected);
     }
+
+    @Test
+    void whenMax16To4parts() {
+        int left = 4;
+        int right = 4;
+        int one = 4;
+        int two = 4;
+        int result = max(left, right, one, two);
+        int expected = 16;
+        assertThat(result).isEqualTo(expected);
+    }
+
+    @Test
+    void whenMax9To3parts() {
+        int left = 3;
+        int right = 3;
+        int center = 3;
+        int result = max(left, right, center);
+        int expected = 9;
+        assertThat(result).isEqualTo(expected);
+    }
 }
