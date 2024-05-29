@@ -22,7 +22,7 @@ class PointTest {
         double expected = 31.112;
         Point q = new Point(11, 22);
         Point w = new Point(33, 44);
-        double output = q.distance1(w);
+        double output = q.distance(w);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 
@@ -31,7 +31,7 @@ class PointTest {
         double expected = 8.062;
         Point r = new Point(0, 1);
         Point t = new Point(8, 0);
-        double output = r.distance2(t);
+        double output = r.distance(t);
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
 }
