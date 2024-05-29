@@ -47,7 +47,7 @@ class MAXTest {
     }
 
     @Test
-    void whenMax9To3parts() {
+    void whenMax9To3part() {
         int left = 3;
         int right = 3;
         int center = 3;
