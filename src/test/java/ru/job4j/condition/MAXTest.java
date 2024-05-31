@@ -56,3 +56,4 @@ class MAXTest {
         assertThat(result).isEqualTo(expected);
     }
 }
+/* написать формулу для расчета площади треугольника. */
