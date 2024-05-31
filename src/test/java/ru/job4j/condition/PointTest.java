@@ -36,7 +36,7 @@ class PointTest {
     }
 
     @Test
-    void when3d() {
+    void when124to753then8dot782in3d() {
         double expected = 6.782;
         Point l = new Point(1, 2, 4);
         Point v = new Point(7, 5, 3);
